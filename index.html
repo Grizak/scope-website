@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope Developer Browser</title>
+    <style>
+      /* Reset & base */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Fira Code", monospace, monospace;
+      }
+      body {
+        background-color: #0f1419;
+        color: #ffffff;
+        line-height: 1.6;
+      }
+
+      /* Container */
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      /* Header */
+      header {
+        margin-bottom: 2rem;
+      }
+      header h1 {
+        font-size: 3rem;
+        color: #1affff;
+        margin-bottom: 0.5rem;
+      }
+      header p {
+        font-size: 1.25rem;
+        color: #cccccc;
+      }
+
+      /* Icons display */
+      .icons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+      .icons img {
+        width: 128px;
+        height: 128px;
+      }
+
+      /* Features */
+      .features {
+        display: grid;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        text-align: left;
+      }
+      .features div {
+        background-color: #1a1f28;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid #1affff;
+      }
+      .features h3 {
+        color: #1affff;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Download button */
+      .download {
+        margin-top: 3rem;
+      }
+      .download a {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: #1affff;
+        color: #0f1419;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        transition: transform 0.2s ease;
+      }
+      .download a:hover {
+        transform: scale(1.05);
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 4rem;
+        color: #666666;
+        font-size: 0.9rem;
+      }
+    </style>
+    <link rel="icon" href="images/scope_logo_32.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Scope</h1>
+        <p>See exactly what’s happening — the developer-focused browser.</p>
+      </header>
+
+      <div class="icons">
+        <img src="images/scope_logo_128.png" alt="Scope Logo" />
+        <img src="images/scope_dev_mode_128.png" alt="Scope Dev Mode Icon" />
+        <img
+          src="images/scope_experimental_128.png"
+          alt="Scope Experimental Icon"
+        />
+      </div>
+
+      <section class="features">
+        <div>
+          <h3>Developer-first Tools</h3>
+          <p>
+            Built-in DevTools enhancements, cache control, and experimental API
+            support.
+          </p>
+        </div>
+        <div>
+          <h3>Clear Visual Feedback</h3>
+          <p>Icons and badges show your browser’s state at a glance.</p>
+        </div>
+        <div>
+          <h3>Fast & Modern</h3>
+          <p>
+            Powered by Chromium — speed and reliability without extra clutter.
+          </p>
+        </div>
+      </section>
+
+      <div class="download">
+        <a href="#">Download Scope (Coming Soon)</a>
+      </div>
+
+      <footer>
+        &copy; 2025 Isak Grönlund. All rights reserved.
+        <br />
+        Released under the
+        <a
+          href="https://github.com/Grizak/scope-developer-browser/blob/master/LICENSE"
+          style="color: #1affff"
+          target="_blank"
+          >MIT License</a
+        >.
+      </footer>
+    </div>
+  </body>
+</html>
